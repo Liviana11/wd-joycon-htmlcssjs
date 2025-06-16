@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JoyCon</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
     <!-- buat komponen yang menggambarkan controller @MUTAMA -->
@@ -43,5 +45,28 @@
     <!--  -->
     <!-- kamu boleh menambahkan sprite di samping textscreen yang sudah ada @POINPLUS -->
     <!-- di ujung kanan bawah, tambahkan informasi NIM, nama, dan link Github @UTAMA -->
+
+    <div class="container">
+        <div class="tampilan box p-[50px] flex items-center justify-center ">
+            <div class="hasil">right</div>
+        </div>
+        
+        <div class="key box-1 flex items-center w-[700px]">
+            <div class="kiri box-2 ">
+                <div class="up">
+                    <span>up</span>
+                </div>
+                <div class="down flex gap-x-[10px]">
+                    <span>left</span>
+                    <span>down</span>
+                    <span>right</span>
+                </div>
+            </div>
+            <div class="kanan box-2 p-[150px] flex gap-x-[10px]">
+                <span>B</span>
+                <span>A</span>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
