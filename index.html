@@ -48,25 +48,60 @@
 
     <div class="container">
         <div class="tampilan box p-[50px] flex items-center justify-center ">
-            <div class="hasil">right</div>
+            <div id="hasil"></div>
         </div>
         
         <div class="key box-1 flex items-center w-[700px]">
-            <div class="kiri box-2 ">
-                <div class="up">
-                    <span>up</span>
+            <div class="kiri box-2 p-[30px]">
+                <div class="up flex justify-center">
+                    <button id="up">up</button>
                 </div>
-                <div class="down flex gap-x-[10px]">
-                    <span>left</span>
-                    <span>down</span>
-                    <span>right</span>
+                <div class="down flex gap-x-[10px] justify-center">
+                    <button id="left">left</button>
+                    <button id="down">down</button>
+                    <button id="right">right</button>
                 </div>
             </div>
-            <div class="kanan box-2 p-[150px] flex gap-x-[10px]">
-                <span>B</span>
-                <span>A</span>
+            <div class="kanan box-2 flex gap-x-[10px]">
+                <button id="b">B</button>
+                <button id="a">A</button>
             </div>
         </div>
     </div>
 </body>
+
+<script>
+    const up = document.getElementById('up')
+    const left = document.getElementById('left')
+    const down = document.getElementById('down')
+    const right = document.getElementById('right')
+    const b = document.getElementById('b')
+    const a = document.getElementById('a')
+    const hasil = document.getElementById('hasil')
+
+    up.addEventListener('click', function () {
+        let result = 'up'
+        hasil.innerHTML = result
+    })
+    left.addEventListener('click', function () {
+        let result = 'left'
+        hasil.innerHTML = result
+    })
+    down.addEventListener('click', function () {
+        let result = 'down'
+        hasil.innerHTML = result
+    })
+    right.addEventListener('click', function () {
+        let result = 'right'
+        hasil.innerHTML = result
+    })
+    b.addEventListener('click', function () {
+        let result = 'B'
+        hasil.innerHTML = result
+    })
+    a.addEventListener('click', function () {
+        let result = 'A'
+        hasil.innerHTML = result
+    })
+</script>
 </html>
