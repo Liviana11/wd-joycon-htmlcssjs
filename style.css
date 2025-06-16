@@ -75,16 +75,20 @@ button {
 
 #up {
     padding: 20px 25px;
+    cursor: pointer;
 }
 
 #left {
     padding: 20px 25px;
+    cursor: pointer;
 }
 
 #down {
     padding: 10px 15px;
+    cursor: pointer;
 }
 
 #right {
     padding: 20px 20px;
+    cursor: pointer;
 }
