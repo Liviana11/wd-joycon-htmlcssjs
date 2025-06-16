@@ -1,8 +1,24 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
 }
-.tampilan {
-    
+
+@keyframes fall {
+    from {
+      transform: translateY(-120vh);
+    }
+    to {
+      transform: translateY(0);
+    }
+}
+
+body {
+    padding-top: 100px;
+    color: black;
+    font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 .container {
@@ -45,6 +61,10 @@ button {
     border: 2px solid rgb(136, 135, 135);
     border-radius: 25px;
     box-shadow: 20px 0 50px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+    
 }
 
 .kanan button{
